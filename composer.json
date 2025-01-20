@@ -1,0 +1,34 @@
+{
+  "name": "arashmehrani/laravel-persian-lang",
+  "description": "Persian language support for Laravel versions 5.8 to 11.",
+  "keywords": ["laravel", "persian", "localization", "fa", "language"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Arash Mehrani",
+      "email": "your.email@example.com"
+    },
+    {
+      "name": "Arash Amini",
+      "email": "arashaminiasdf@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.5",
+    "laravel/framework": ">=5.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "LaravelPersianLang\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelPersianLang\\ServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable"
+}
