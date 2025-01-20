@@ -1,10 +1,10 @@
-# Laravel Persian Language Pack
+# Laravel Persian Language
 
-A **Persian language pack** for **Laravel 11**, providing translations for authentication, validation, pagination, and password reset messages. Simplify localization in your Laravel projects with this ready-to-use package.
+A **Persian language** for **Laravel 11+**, providing translations for `authentication`, `validation`, `pagination`, and `password reset messages`. Simplify localization in your Laravel projects with this ready-to-use package.
 
 ---
 
-## Features
+## The Main Features
 
 - **Fully compatible with Laravel 11.**
 - Covers all standard Laravel translation files:
@@ -22,7 +22,7 @@ A **Persian language pack** for **Laravel 11**, providing translations for authe
 Install the package using Composer:
 
 ```bash
-composer require arashmehrani/laravel-persian-lang
+$ composer require arashmehrani/laravel-persian-lang
 ```
 
 ---
