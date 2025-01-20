@@ -1,72 +1,43 @@
-# Persian Language Support for Laravel (v5.8 - v11)
+# Laravel Persian Language Pack
 
-This package provides Persian translations for Laravel framework versions 5.8 to 11.
-
-## Supported Versions
-
-- Laravel 5.8.\*
-- Laravel 6.\*
-- Laravel 7.\*
-- Laravel 8.\*
-- Laravel 9.\*
-- Laravel 10.\*
-- Laravel 11.\*
+A **Persian language pack** for **Laravel 11**, providing translations for authentication, validation, pagination, and password reset messages. Simplify localization in your Laravel projects with this ready-to-use package.
 
 ---
 
-## What's Included
+## Features
 
-The package contains translation files for both JSON and PHP arrays:
-
-```text
-laravel/
-└── resources/
-    └── lang/
-        ├── fa.json
-        └── fa/
-            ├── auth.php
-            ├── pagination.php
-            ├── passwords.php
-            └── validation.php
-```
+- **Fully compatible with Laravel 11.**
+- Covers all standard Laravel translation files:
+  - Authentication (`auth.php`)
+  - Pagination (`pagination.php`)
+  - Passwords (`passwords.php`)
+  - Validation (`validation.php`)
+  - General messages (`fa.json`)
+- Simple installation and setup process.
 
 ---
 
-## Installation and Usage
+## Installation
 
-### Steps
-
-1. Copy the `fa.json` file and the `fa` directory from this package to your Laravel project's `\resources\lang` directory:
-   ```text
-   your-laravel-project/
-   └── resources/
-       └── lang/
-           ├── fa.json
-           └── fa/
-   ```
-
-2. Open the `config/app.php` file in your Laravel project and update the locale setting:
-   ```php
-   'locale' => 'en',
-   ```
-   Change it to:
-   ```php
-   'locale' => 'fa',
-   ```
-
-3. You're all set! Your Laravel application will now use Persian translations for built-in messages and validation errors.
-
----
-
-## Special Note for Laravel 10 and 11
-
-For Laravel versions 10 and 11, you must first publish the language files using the following Artisan command:
+Install the package using Composer:
 
 ```bash
-php artisan lang:publish
+composer require arashmehrani/laravel-persian-lang
 ```
 
-This will create a directory structure similar to the following:
+---
+
+## Usage
+
+### Step 1: Publish the Language Files
+
+Run the following Artisan command to publish the Persian language files:
+
+```bash
+php artisan vendor:publish --tag=laravel-persian-lang
+```
+
+The files will be copied to your `lang` directory as follows:
 
 ```text
 laravel/
@@ -79,42 +50,48 @@ laravel/
         └── validation.php
 ```
 
-The `fa.json` file is ideal for translating the entire application quickly.
+---
+
+### Step 2: Set Persian as the Default Locale
+
+To make Persian the default language of your application, update the `locale` setting in the `config/app.php` file:
+
+```php
+'locale' => 'fa',
+```
 
 ---
 
-<div dir="rtl">
+### Updating Translations
 
-## نحوه استفاده
+If new updates or fixes are made to the translations, you can republish the files by running:
 
-1. ابتدا فایل `fa.json` و پوشه `fa` این پکیج را به دایرکتوری `\resources\lang` پروژه لاراولی خود کپی کنید:
-   ```text
-   your-laravel-project/
-   └── resources/
-       └── lang/
-           ├── fa.json
-           └── fa/
-   ```
+```bash
+php artisan vendor:publish --tag=laravel-persian-lang --force
+```
 
-2. فایل `app.php` در مسیر `\config` را باز کرده و مقدار `'locale' => 'en'` را به `'locale' => 'fa'` تغییر دهید.
+This will overwrite the existing Persian language files with the latest versions from the package.
 
-3. تبریک! پیام‌ها و ارورهای لاراول شما به زبان فارسی نمایش داده می‌شوند.
+---
 
--- **نکته:** برای لاراول نسخه 10 و 11، ابتدا فایل‌های زبان را با دستور Artisan زیر منتشر کنید:
-   ```bash
-   php artisan lang:publish
-   ```
+## Contribution Guidelines
 
-   ساختار فایل‌ها پس از انتشار:
-   ```text
-   laravel/
-   └── lang/
-       ├── fa.json
-       └── fa/
-           ├── auth.php
-           ├── pagination.php
-           ├── passwords.php
-           └── validation.php
-   ```
+Contributions are welcome! Here's how to contribute:
 
-</div>
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Commit your changes: `git commit -m "Add feature or fix"`.
+4. Push to your branch: `git push origin feature/your-feature-name`.
+5. Submit a pull request.
+
+---
+
+## License
+
+This package is open-source software licensed under the [MIT license](LICENSE).
+
+---
+
+## Need Help?
+
+If you encounter any issues, feel free to [open an issue](https://github.com/arashmehrani/laravel-persian-lang) on GitHub.

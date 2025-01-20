@@ -1,6 +1,6 @@
 {
   "name": "arashmehrani/laravel-persian-lang",
-  "description": "Persian language support for Laravel versions 5.8 to 11.",
+  "description": "Persian language support for Laravel 11.",
   "keywords": ["laravel", "persian", "localization", "fa", "language"],
   "type": "library",
   "license": "MIT",
@@ -15,8 +15,8 @@
     }
   ],
   "require": {
-    "php": ">=7.2.5",
-    "laravel/framework": ">=5.8"
+    "php": ">=8.0",
+    "laravel/framework": ">=11.0"
   },
   "autoload": {
     "psr-4": {
