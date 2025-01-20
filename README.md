@@ -1,6 +1,6 @@
 # Laravel Persian Language
 
-A **Persian language** for **Laravel 11+**, providing translations for `authentication`, `validation`, `pagination`, and `password reset messages`. Simplify localization in your Laravel projects with this ready-to-use package.
+A **Persian language package** for **Laravel 11+**, providing translations for `authentication`, `validation`, `pagination`, and `password reset messages`. Simplify localization in your Laravel projects with this ready-to-use package.
 
 ---
 
